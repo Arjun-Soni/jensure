@@ -38,7 +38,7 @@ export function HeroSection() {
 
       <div className="absolute inset-0 md:hidden">
         <Image
-          src="/images/jensure-hero.jpeg"
+          src="/images/jensure-hero-banner.png"
           alt="JENSURE medical professional with medical device"
           fill
           priority
@@ -61,7 +61,7 @@ export function HeroSection() {
       >
         <div className="relative w-full h-full">
           <Image
-            src="/images/jensure-hero.jpeg"
+            src="/images/jensure-hero-banner.png"
             alt="JENSURE medical professional with medical device"
             fill
             priority
@@ -85,7 +85,7 @@ export function HeroSection() {
       >
         <div className="relative w-full h-full">
           <Image
-            src="/images/jensure-hero.jpeg"
+            src="/images/jensure-hero-banner.png"
             alt="JENSURE medical professional with medical device"
             fill
             priority
@@ -113,7 +113,9 @@ export function HeroSection() {
               }}
             >
               <span className="lg:drop-shadow-none drop-shadow-[0_0_10px_rgba(0,0,0,0.9)]">
-                Engineering Precision. Manufacturing Trust.
+                Medical Quality.
+                <br />
+                Built for Patient Safety.
               </span>
             </h1>
 
@@ -124,8 +126,8 @@ export function HeroSection() {
               }}
             >
               <span className="lg:drop-shadow-none drop-shadow-[0_0_15px_rgba(0,0,0,1)] bg-black/30 lg:bg-transparent px-2 lg:px-0 py-1.5 lg:py-0 rounded-md lg:rounded-none inline-block">
-                OEM manufacturer of sterile, precision-engineered medical devices trusted by hospitals and distributors
-                worldwide.
+                From IV infusion sets to endotracheal tubes, our devices are manufactured to ensure sterility, safety,
+                and dependable performance in critical care environments.
               </span>
             </p>
 

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function OemCtaSection() {
   const ref = useRef(null)
@@ -51,12 +51,12 @@ export function OemCtaSection() {
           <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 sm:mb-10 leading-relaxed text-pretty">
             Bring your medical device vision to life with our world-class manufacturing and compliance systems.
           </p>
-          <Button
-            size="lg"
-            className="bg-white text-[#0B3D69] hover:bg-gradient-to-r hover:from-[#0B3D69] hover:to-[#2E8B57] hover:text-white hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6"
+          <Link
+            href="/contact#inquiry-form"
+            className="inline-block bg-white text-[#0B3D69] hover:bg-gradient-to-r hover:from-[#0B3D69] hover:to-[#2E8B57] hover:text-white hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-lg font-semibold"
           >
             Request OEM Info
-          </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

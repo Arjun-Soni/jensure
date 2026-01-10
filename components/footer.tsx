@@ -17,12 +17,12 @@ export function Footer() {
   ]
 
   const productLinks = [
-    { name: "IV Cannula", href: "/products/iv-cannula" },
-    { name: "3-Way Stop Cock", href: "/products/3-way-stopcock" },
-    { name: "Extension Line", href: "/products/extension-line" },
-    { name: "Urine Collection Bag", href: "/products/urine-collection-bag" },
-    { name: "Endotracheal Tube", href: "/products/endotracheal-tube" },
-    { name: "Foley Catheter", href: "/products/foley-catheter" },
+    { name: "IV Cannula", href: "/products/iv-cannula#top" },
+    { name: "3-Way Stop Cock", href: "/products/3-way-stopcock#top" },
+    { name: "Extension Line", href: "/products/extension-line#top" },
+    { name: "Urine Collection Bag", href: "/products/urine-collection-bag#top" },
+    { name: "Endotracheal Tube", href: "/products/endotracheal-tube#top" },
+    { name: "Foley Catheter", href: "/products/foley-catheter#top" },
   ]
 
   return (

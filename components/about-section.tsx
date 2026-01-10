@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Award, Globe, Shield, Zap } from 'lucide-react'
+import { Award, Globe, Shield, Zap } from "lucide-react"
 import Image from "next/image"
 
 export function AboutSection() {
@@ -14,12 +14,12 @@ export function AboutSection() {
     {
       icon: Shield,
       title: "Sterile Manufacturing",
-      description: "ISO-certified cleanroom facilities",
+      description: "Class 10,000 cleanroom facilities",
     },
     {
       icon: Award,
       title: "Quality Assured",
-      description: "CE & GMP compliant processes",
+      description: "CE & ISO compliant processes",
     },
     {
       icon: Globe,
@@ -53,9 +53,10 @@ export function AboutSection() {
                 Who We Are
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-[#4A5C6A] leading-relaxed">
-                JENSURE Medex Pvt. Ltd. is an OEM medical device manufacturer delivering sterile, precision-engineered
-                solutions across infusion therapy and airway management. Our focus is on reliability, compliance, and
-                global manufacturing excellence.
+                JENSURE MEDEX PVT. LTD. is a trusted global manufacturer and exporter of high-quality single-use medical
+                devices, delivering reliable healthcare solutions to international markets with precision and
+                consistency. Our commitment to excellence, affordability, and regulatory compliance positions us as a
+                preferred partner for healthcare providers and distributors worldwide.
               </p>
             </motion.div>
 
@@ -76,7 +77,7 @@ export function AboutSection() {
                 }}
               >
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jensure_engineer_img-IyJscjVdV7XV3w3XIlHmZ9Crmz2gAt.jpeg"
+                  src="/images/jensure-engineer-img.jpeg"
                   alt="JENSURE manufacturing engineer in sterile facility"
                   fill
                   className="object-cover object-center"
@@ -93,7 +94,6 @@ export function AboutSection() {
                 </div>
               </div>
             </motion.div>
-            {/* </CHANGE> */}
           </div>
         </div>
 

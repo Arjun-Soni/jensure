@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Award, CheckCircle, FileCheck } from "lucide-react"
+import { Award, CheckCircle } from "lucide-react"
 
 const certifications = [
   {
@@ -16,13 +16,7 @@ const certifications = [
     icon: CheckCircle,
     name: "CE Compliant",
     description:
-      "CE marking compliance demonstrating conformity with EU health, safety, and environmental protection standards.",
-  },
-  {
-    icon: FileCheck,
-    name: "GMP Certified",
-    description:
-      "Good Manufacturing Practice certification ensuring products are consistently produced and controlled according to quality standards.",
+      "CE compliance demonstrating conformity with EU health, safety, and environmental protection standards.",
   },
 ]
 
@@ -86,7 +80,7 @@ export function CertificationsSection() {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-2xl mx-auto">
           {certifications.map((cert, index) => (
             <motion.div
               key={cert.name}

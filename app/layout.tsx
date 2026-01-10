@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter, IBM_Plex_Sans, Roboto_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { ClientLayout } from "./client-layout"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,9 +36,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${ibmPlexSans.variable} ${robotoMono.variable} font-sans antialiased`}>
-        {children}
+        <ClientLayout>{children}</ClientLayout>
         <Analytics />
       </body>
     </html>
