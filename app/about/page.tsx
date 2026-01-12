@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#f7fafc] to-white">
       <Navbar />
-      <main className="pt-20">
+      <main className="pt-8">
         <AboutHero />
         <OEMDominance />
         <VisionGlobal />

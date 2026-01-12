@@ -32,7 +32,7 @@ export function AboutHero() {
   }
 
   return (
-    <section className="relative py-24 sm:py-40 flex items-center justify-center overflow-hidden">
+    <section className="relative py-16 sm:py-24 flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-[#f7fafc] via-[#e8f4f8] to-[#f0f6ff]" />
 
       {/* Animated gradient background shapes */}
