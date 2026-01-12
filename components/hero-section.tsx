@@ -113,9 +113,9 @@ export function HeroSection() {
               }}
             >
               <span className="lg:drop-shadow-none drop-shadow-[0_0_10px_rgba(0,0,0,0.9)]">
-                Medical Quality.
+                Medical Devices.
                 <br />
-                Built for Patient Safety.
+                Manufacturing Industry.
               </span>
             </h1>
 

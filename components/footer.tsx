@@ -55,7 +55,7 @@ export function Footer() {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#2E8B57]/20 to-transparent blur-xl animate-pulse" />
               )}
             </div>
-            <p className="text-white/80 text-sm leading-relaxed">Precision OEM Medical Devices</p>
+            <p className="text-white/80 text-sm leading-relaxed">Global Health Care Solutions</p>
           </div>
 
           {/* Column 2: Quick Links */}
