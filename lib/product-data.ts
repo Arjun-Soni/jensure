@@ -88,6 +88,7 @@ export const productData: ProductData = {
       "Tapered FEP radiopaque catheter for easy insertion with optimal flow rate",
       "Flexible wings for secure insertion and patient comfort",
       "Biocompatible materials ensuring patient safety",
+      "Injection port with non-return silicon valve (JENFLON variant)",
       "Transparent flashback chamber for immediate blood return confirmation",
       "Color-coded for easy gauge identification",
     ],
