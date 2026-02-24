@@ -18,6 +18,12 @@ const certifications = [
     description:
       "CE compliance demonstrating conformity with EU health, safety, and environmental protection standards.",
   },
+  {
+    icon: Award,
+    name: "GMP Certified",
+    description:
+      "Good Manufacturing Practice certified ensuring the highest standards of product quality, safety, and regulatory compliance.",
+  },
 ]
 
 export function CertificationsSection() {
@@ -80,7 +86,7 @@ export function CertificationsSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
           {certifications.map((cert, index) => (
             <motion.div
               key={cert.name}

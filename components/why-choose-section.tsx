@@ -19,7 +19,7 @@ const features = [
   {
     icon: Globe,
     title: "Global Standards Compliance",
-    description: "CE & ISO-standard devices.",
+    description: "CE, ISO & GMP compliant devices.",
   },
   {
     icon: ShieldCheck,

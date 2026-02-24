@@ -23,6 +23,33 @@ export function ProductDetail({ slug }: ProductDetailProps) {
 
   const currentVariant = product.variants[activeVariant]
 
+  // Dynamic heading for 3-way stopcock variants
+  const getProductHeading = () => {
+    if (slug === "3-way-stopcock") {
+      const variantName = currentVariant.name
+      if (variantName === "JENWAY PRO") {
+        return "3-Way Stopcock: Lipid Resistant"
+      } else if (variantName === "JENWAY CLICK") {
+        return "3-Way Stopcock: Lipid Resistant with Click"
+      } else if (variantName === "JENWAY WITH EXTENSION LINE") {
+        return "3-Way Stopcock: With Extension Line"
+      }
+    }
+    return product.name
+  }
+
+  // Filter common features based on variant
+  const getDisplayedFeatures = () => {
+    let features = [...product.commonFeatures]
+    
+    // For IV Cannula, hide the injection port feature if variant is not JENFLON
+    if (slug === "iv-cannula" && currentVariant.name !== "JENFLON") {
+      features = features.filter(feature => !feature.includes("Injection port with non-return silicon valve"))
+    }
+    
+    return features
+  }
+
   return (
     <section className="pt-24 sm:pt-32 pb-16 sm:pb-24 bg-gradient-to-b from-[#F7FAFC] to-white">
       <div className="container mx-auto px-4 sm:px-6">
@@ -99,7 +126,7 @@ export function ProductDetail({ slug }: ProductDetailProps) {
             <div>
               <div className="text-sm font-semibold text-[#006D77] mb-2 tracking-wide uppercase">{product.series}</div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B3D69] mb-4 text-balance">
-                {product.name}
+                {getProductHeading()}
               </h1>
               <p className="text-lg text-[#4A5C6A] leading-relaxed text-balance mb-6">{product.tagline}</p>
 
@@ -130,7 +157,7 @@ export function ProductDetail({ slug }: ProductDetailProps) {
         >
           <h2 className="text-2xl font-bold text-[#0B3D69] mb-6">Common Features</h2>
           <div className="grid sm:grid-cols-2 gap-4">
-            {product.commonFeatures.map((feature, index) => (
+            {getDisplayedFeatures().map((feature, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, x: -20 }}

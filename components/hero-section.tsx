@@ -113,9 +113,11 @@ export function HeroSection() {
               }}
             >
               <span className="lg:drop-shadow-none drop-shadow-[0_0_10px_rgba(0,0,0,0.9)]">
-                Medical Devices.
+                Leading Healthcare
                 <br />
-                Manufacturing Industry.
+                Solutions in Medical
+                <br />
+                Devices and Equipment
               </span>
             </h1>
 
@@ -126,8 +128,7 @@ export function HeroSection() {
               }}
             >
               <span className="lg:drop-shadow-none drop-shadow-[0_0_15px_rgba(0,0,0,1)] bg-black/30 lg:bg-transparent px-2 lg:px-0 py-1.5 lg:py-0 rounded-md lg:rounded-none inline-block">
-                From IV infusion sets to endotracheal tubes, our devices are manufactured to ensure sterility, safety,
-                and dependable performance in critical care environments.
+                From IV cannulas and 3-way stopcocks to a wide range of medical tubing, our single-use medical devices are manufactured to ensure safety, precision, and reliability.
               </span>
             </p>
 
