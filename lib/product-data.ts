@@ -50,7 +50,7 @@ export const productData: ProductData = {
         },
       },
       {
-        name: "JENICAN",
+        name: "JENCAN",
         image: "https://raw.githubusercontent.com/jensuremedex/my-images/refs/heads/main/JENICAN.jpeg",
         description:
           "IV cannula with wings, without port. Designed for secure venous access with flexible wings for patient comfort. Available in multiple gauge sizes for various clinical applications.",
@@ -68,7 +68,7 @@ export const productData: ProductData = {
         },
       },
       {
-        name: "JENINEO",
+        name: "JENNEO",
         image: "https://raw.githubusercontent.com/jensuremedex/my-images/refs/heads/main/JENINEO.jpeg",
         description:
           "IV cannula without port, featuring small wings for neonatal and pediatric applications. Ultra-precise design ensures minimal trauma during insertion while maintaining optimal flow characteristics.",
@@ -100,7 +100,7 @@ export const productData: ProductData = {
         name: "JENWAY",
         image: "https://raw.githubusercontent.com/jensuremedex/my-images/refs/heads/main/JENWAY.jpeg",
         description:
-          "Standard 3-way stopcock with transparent channel for visual flow monitoring. Features arrow indication for flow direction and rotating male/female luer connectors for versatile positioning.",
+          "Designed for multiple infusions with smooth 360° rotation. Features rotating male luer and female luer connectors for secure and flexible connections.",
       },
       {
         name: "JENWAY PRO",
@@ -129,6 +129,7 @@ export const productData: ProductData = {
       "Rotating male luer and female luer connectors",
       "Smooth rotation mechanism for easy operation",
       "Sterile, single-use design",
+      "Connection meets 6% taper requirement to ensure leakage free fitment.",
     ],
   },
   "extension-line": {
