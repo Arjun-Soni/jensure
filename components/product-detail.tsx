@@ -23,6 +23,21 @@ export function ProductDetail({ slug }: ProductDetailProps) {
 
   const currentVariant = product.variants[activeVariant]
 
+  // Dynamic heading for 3-way stopcock variants
+  const getProductHeading = () => {
+    if (slug === "3-way-stopcock") {
+      const variantName = currentVariant.name
+      if (variantName === "JENWAY PRO") {
+        return "3-Way Stopcock: Lipid Resistant"
+      } else if (variantName === "JENWAY CLICK") {
+        return "3-Way Stopcock: Lipid Resistant with Click"
+      } else if (variantName === "JENWAY WITH EXTENSION LINE") {
+        return "3-Way Stopcock: With Extension Line"
+      }
+    }
+    return product.name
+  }
+
   return (
     <section className="pt-24 sm:pt-32 pb-16 sm:pb-24 bg-gradient-to-b from-[#F7FAFC] to-white">
       <div className="container mx-auto px-4 sm:px-6">
@@ -99,7 +114,7 @@ export function ProductDetail({ slug }: ProductDetailProps) {
             <div>
               <div className="text-sm font-semibold text-[#006D77] mb-2 tracking-wide uppercase">{product.series}</div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B3D69] mb-4 text-balance">
-                {product.name}
+                {getProductHeading()}
               </h1>
               <p className="text-lg text-[#4A5C6A] leading-relaxed text-balance mb-6">{product.tagline}</p>
 

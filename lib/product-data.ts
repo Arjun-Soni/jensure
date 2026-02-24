@@ -106,20 +106,20 @@ export const productData: ProductData = {
         name: "JENWAY PRO",
         image: "https://raw.githubusercontent.com/jensuremedex/my-images/refs/heads/main/JENWAY%20PRO.jpeg",
         description:
-          "Professional-grade 3-way stopcock with enhanced durability and precision flow control. Designed for high-pressure applications up to 4.5 bar (65 psi).",
+          "Manufactured for multiple infusions with enhanced lipid resistance. Provides smooth 360° rotation for ease of use and precise fluid control.",
       },
       {
         name: "JENWAY CLICK",
         image: "https://raw.githubusercontent.com/jensuremedex/my-images/refs/heads/main/JENWAY%20CLICK.jpeg",
         description:
-          "3-way stopcock with audible click mechanism for positive position confirmation. Ensures accurate flow direction setting in critical care environments.",
+          "Lipid-resistant three-way stopcock with an integrated 45° click mechanism for clear positioning and controlled operation.",
       },
       {
         name: "JENWAY WITH EXTENSION LINE",
         image:
           "https://raw.githubusercontent.com/jensuremedex/my-images/refs/heads/main/JENWAY%20WITH%20EXTENSION%20LINE.jpeg",
         description:
-          "Integrated 3-way stopcock with extension line for convenient IV access. Combines flow control and line extension in a single sterile package.",
+          "Three-way stopcock with integrated extension line for added convenience and flexibility. - Soft, frosted, and kink-resistant DEHP-free PVC tubing - Available with rotating luer lock - Tube dimensions: ID Ø 3 mm and OD Ø 4.1 mm - Available with rotating Luer lock",
       },
     ],
     commonFeatures: [
