@@ -48,6 +48,9 @@ export const productData: ProductData = {
             ["26G", "Violet", "0.6", "19", "13"],
           ],
         },
+        variantFeatures: [
+          "Injection port with non-return silicon valve",
+        ],
       },
       {
         name: "JENCAN",
@@ -85,7 +88,6 @@ export const productData: ProductData = {
       "Tapered FEP radiopaque catheter for easy insertion with optimal flow rate",
       "Flexible wings for secure insertion and patient comfort",
       "Biocompatible materials ensuring patient safety",
-      "Injection port with non-return silicon valve (JENFLON variant)",
       "Transparent flashback chamber for immediate blood return confirmation",
       "Color-coded for easy gauge identification",
     ],
@@ -119,7 +121,7 @@ export const productData: ProductData = {
         image:
           "https://raw.githubusercontent.com/jensuremedex/my-images/refs/heads/main/JENWAY%20WITH%20EXTENSION%20LINE.jpeg",
         description:
-          "Three-way stopcock with integrated extension line for added convenience and flexibility. - Soft, frosted, and kink-resistant DEHP-free PVC tubing - Available with rotating luer lock - Tube dimensions: ID Ø 3 mm and OD Ø 4.1 mm - Available with rotating Luer lock",
+          "Three-way stopcock with integrated extension line for added convenience and flexibility. Features soft, frosted, and kink-resistant DEHP-free PVC tubing with rotating luer lock connectors. Tube dimensions: ID Ø 3 mm and OD Ø 4.1 mm for optimal flow control.",
       },
     ],
     commonFeatures: [
