@@ -115,9 +115,9 @@ export function HeroSection() {
               <span className="lg:drop-shadow-none drop-shadow-[0_0_10px_rgba(0,0,0,0.9)]">
                 Leading Healthcare
                 <br />
-                Solutions in Medical
+                Solutions in
                 <br />
-                Devices and Equipment
+                Disposable Medical Devices
               </span>
             </h1>
 
@@ -128,7 +128,7 @@ export function HeroSection() {
               }}
             >
               <span className="lg:drop-shadow-none drop-shadow-[0_0_15px_rgba(0,0,0,1)] bg-black/30 lg:bg-transparent px-2 lg:px-0 py-1.5 lg:py-0 rounded-md lg:rounded-none inline-block">
-                From IV cannulas and 3-way stopcocks to a wide range of medical tubing, our single-use medical devices are manufactured to ensure safety, precision, and reliability.
+                From IV cannula and 3-way stopcock to a wide range of medical tubing, our single-use medical devices are manufactured to ensure safety, precision, and reliability.
               </span>
             </p>
 
