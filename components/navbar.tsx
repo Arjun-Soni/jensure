@@ -56,19 +56,18 @@ export function Navbar() {
       <nav className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo + Separator + Tagline */}
-          <Link href="/" className="flex items-center gap-3 z-50">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 z-50">
             <Image
               src="/images/jensure-logo.png"
               alt="JENSURE Medex"
               width={160}
               height={53}
-              className="h-10 sm:h-12 w-auto brightness-0 invert flex-shrink-0"
+              className="h-8 sm:h-10 md:h-12 w-auto brightness-0 invert flex-shrink-0"
               priority
             />
-            <span className="hidden sm:block w-px h-8 bg-white/40 flex-shrink-0" aria-hidden="true" />
+            <span className="w-px h-6 sm:h-7 md:h-8 bg-white/40 flex-shrink-0" aria-hidden="true" />
             <span
-              className="hidden sm:block text-white/90 text-[10px] sm:text-xs font-semibold tracking-[0.18em] leading-tight uppercase"
-              style={{ fontFamily: "var(--font-ibm-plex), sans-serif", letterSpacing: "0.18em" }}
+              className="text-white/90 text-[8px] sm:text-[10px] md:text-xs font-semibold tracking-[0.15em] sm:tracking-[0.18em] leading-tight uppercase"
             >
               Global Health
               <br />

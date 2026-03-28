@@ -47,7 +47,7 @@ export function Footer() {
                 alt="JENSURE Medex"
                 width={180}
                 height={60}
-                className={`h-10 sm:h-12 w-auto brightness-0 invert mb-4 transition-all duration-300 ${
+                className={`h-10 sm:h-12 w-auto brightness-0 invert transition-all duration-300 ${
                   isLogoHovered ? "scale-110 drop-shadow-[0_0_15px_rgba(46,139,87,0.8)]" : ""
                 }`}
               />
@@ -55,7 +55,14 @@ export function Footer() {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#2E8B57]/20 to-transparent blur-xl animate-pulse" />
               )}
             </div>
-            <p className="text-white/80 text-sm leading-relaxed">Global Health Care Solutions</p>
+            {/* Horizontal separator */}
+            <div className="w-full h-px bg-white/30 my-3" />
+            {/* Tagline matching navbar style */}
+            <p
+              className="text-white/90 text-[10px] sm:text-xs font-semibold tracking-[0.18em] leading-tight uppercase"
+            >
+              Global Health Care Solutions
+            </p>
           </div>
 
           {/* Column 2: Quick Links */}
