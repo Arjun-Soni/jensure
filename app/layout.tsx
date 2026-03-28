@@ -28,6 +28,10 @@ export const metadata: Metadata = {
   description:
     "OEM manufacturer of sterile, precision-engineered medical devices trusted by hospitals and distributors worldwide.",
   generator: "v0.app",
+  icons: {
+    icon: "/images/jensure-logo.png",
+    apple: "/images/jensure-logo.png",
+  },
 }
 
 export default function RootLayout({
