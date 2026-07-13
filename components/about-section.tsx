@@ -3,33 +3,29 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Award, Globe, Shield, Zap } from "lucide-react"
+import { Award, Eye, Target, Briefcase, Settings, Globe, CheckCircle } from "lucide-react"
 import Image from "next/image"
 
 export function AboutSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const features = [
+  const stats = [
     {
-      icon: Shield,
-      title: "Sterile Manufacturing",
-      description: "Class 10,000 cleanroom facilities",
+      icon: Briefcase,
+      title: "Product Categories",
     },
     {
-      icon: Award,
-      title: "Quality Assured",
-      description: "CE & ISO compliant processes",
+      icon: Settings,
+      title: "80,000+ SQ. FT. Manufacturing Facility",
     },
     {
       icon: Globe,
-      title: "Global Reach",
-      description: "Trusted by distributors worldwide",
+      title: "Global Presence",
     },
     {
-      icon: Zap,
-      title: "Precision Engineering",
-      description: "Advanced medical device technology",
+      icon: CheckCircle,
+      title: "Quality Commitment",
     },
   ]
 
@@ -37,43 +33,52 @@ export function AboutSection() {
     <section
       id="about"
       ref={ref}
-      className="py-16 sm:py-24 bg-gradient-to-b from-white via-[#F7FAFC] to-white overflow-hidden"
+      className="py-16 sm:py-24 bg-white overflow-hidden relative"
     >
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="relative mb-12 sm:mb-16 lg:mb-20 max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-0 items-center">
+        {/* Main Content Grid */}
+        <div className="relative mb-16 sm:mb-20 max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Column - Text Content */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="relative z-10 lg:pr-12"
+              className="relative z-10"
             >
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#0B3D69] to-[#006D77] bg-clip-text text-transparent mb-4 sm:mb-6">
-                Who We Are
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#003D5C] mb-2 leading-tight">
+                WHO
+                <br />
+                ARE WE
               </h2>
-              <p className="text-base sm:text-lg md:text-xl text-[#4A5C6A] leading-relaxed">
+              {/* Cyan underline accent */}
+              <div className="w-16 h-1 bg-[#00D9D9] mb-8" />
+
+              {/* First paragraph */}
+              <p className="text-base sm:text-lg text-[#003D5C] leading-relaxed mb-6 font-medium">
                 JENSURE MEDEX PVT. LTD. is a trusted global manufacturer and exporter of high-quality single-use medical
-                devices, delivering reliable healthcare solutions to international markets with precision and
-                consistency. Our commitment to excellence, affordability, and regulatory compliance positions us as a
-                preferred partner for healthcare providers and distributors worldwide.
+                devices, delivering reliable healthcare solutions to international markets with precision and consistency.
+              </p>
+
+              {/* Second paragraph */}
+              <p className="text-base sm:text-lg text-[#003D5C] leading-relaxed font-medium">
+                Our commitment to excellence, affordability, and regulatory compliance positions us as a preferred partner
+                for healthcare providers and distributors worldwide.
               </p>
             </motion.div>
 
+            {/* Right Column - Image */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="relative will-change-transform"
             >
-              {/* Glowing border effect */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-[#0B3D69] via-[#006D77] to-[#2E8B57] rounded-2xl blur-xl opacity-30" />
-
               {/* Image container with diagonal clip */}
               <div
-                className="relative h-[500px] sm:h-[550px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl border-2 border-[#006D77]/20"
+                className="relative h-[400px] sm:h-[500px] md:h-[550px] overflow-hidden shadow-xl"
                 style={{
-                  clipPath: "polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                  clipPath: "polygon(0% 0%, 85% 0%, 100% 100%, 0% 100%)",
                 }}
               >
                 <Image
@@ -84,36 +89,76 @@ export function AboutSection() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   quality={85}
                 />
-                {/* Gradient overlay for depth */}
-                <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[#0B3D69]/10" />
-
-                {/* Floating badge */}
-                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-white/95 backdrop-blur-sm rounded-lg px-4 py-2 sm:px-6 sm:py-3 shadow-lg border border-[#006D77]/20">
-                  <p className="text-xs sm:text-sm font-semibold text-[#0B3D69]">Precision Manufacturing Excellence</p>
-                  <p className="text-[10px] sm:text-xs text-[#4A5C6A]">ISO-Certified Cleanroom Facility</p>
-                </div>
               </div>
             </motion.div>
           </div>
         </div>
 
-        {/* Feature Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-6xl mx-auto">
-          {features.map((feature, index) => (
-            <motion.div
-              key={feature.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-              transition={{ duration: 0.4, delay: index * 0.1, ease: "easeOut" }}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-[#BFC8CC]/20"
+        {/* Stats Box - Teal gradient background */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-0 bg-gradient-to-r from-[#00748B] via-[#008899] to-[#00A8A8] rounded-2xl p-8 sm:p-10 mb-16 sm:mb-20 max-w-6xl mx-auto"
+        >
+          {stats.map((stat, index) => (
+            <div
+              key={stat.title}
+              className={`flex flex-col items-center text-center ${
+                index < stats.length - 1 ? "sm:border-r border-white/20" : ""
+              } py-4 sm:py-0`}
             >
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-gradient-to-br from-[#0B3D69] to-[#006D77] flex items-center justify-center mb-4">
-                <feature.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
-              </div>
-              <h3 className="text-lg sm:text-xl font-bold text-[#0B1F33] mb-2">{feature.title}</h3>
-              <p className="text-sm sm:text-base text-[#4A5C6A] leading-relaxed">{feature.description}</p>
-            </motion.div>
+              <stat.icon className="w-10 h-10 sm:w-12 sm:h-12 text-white mb-3 stroke-1" />
+              <h3 className="text-sm sm:text-base font-bold text-white leading-snug">
+                {stat.title}
+              </h3>
+            </div>
           ))}
+        </motion.div>
+
+        {/* Mission and Vision Section */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Mission */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+            className="flex gap-4"
+          >
+            <div className="flex-shrink-0">
+              <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#003D5C]">
+                <Target className="h-6 w-6 text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#003D5C] mb-2">OUR MISSION</h3>
+              <p className="text-sm sm:text-base text-[#003D5C] leading-relaxed">
+                To deliver dependable, high-quality medical devices that enhance patient care while maintaining global
+                quality standards and innovation.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Vision */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+            className="flex gap-4"
+          >
+            <div className="flex-shrink-0">
+              <div className="flex items-center justify-center h-12 w-12 rounded-full bg-[#003D5C]">
+                <Eye className="h-6 w-6 text-white" />
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#003D5C] mb-2">OUR VISION</h3>
+              <p className="text-sm sm:text-base text-[#003D5C] leading-relaxed">
+                To become the leading global brand and OEM supplier trusted by healthcare organisations worldwide for
+                precision-engineered medical devices.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
