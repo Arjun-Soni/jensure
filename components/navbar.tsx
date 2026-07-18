@@ -67,7 +67,7 @@ export function Navbar() {
             />
             <span className="w-px h-6 sm:h-7 md:h-8 bg-white/40 flex-shrink-0" aria-hidden="true" />
             <span
-              className="text-white/90 text-[7px] sm:text-[8px] md:text-[9px] font-bold tracking-[0.12em] sm:tracking-[0.14em] leading-tight uppercase"
+              className="text-white/90 text-[8px] sm:text-[10px] md:text-xs font-semibold tracking-[0.15em] sm:tracking-[0.18em] leading-tight uppercase"
             >
               Driven by Quality
               <br />

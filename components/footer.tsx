@@ -59,7 +59,7 @@ export function Footer() {
             <div className="w-full h-px bg-white/30 my-3" />
             {/* Tagline matching navbar style */}
             <p
-              className="text-white/90 text-[8px] sm:text-[9px] font-bold tracking-[0.14em] leading-tight uppercase"
+              className="text-white/90 text-[10px] sm:text-xs font-semibold tracking-[0.18em] leading-tight uppercase"
             >
               Driven by Quality
               <br />
