@@ -46,8 +46,8 @@ export function Navbar() {
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 will-change-transform transition-all duration-300 ease-out ${
         isScrolled
-          ? "bg-gradient-to-r from-[#0B3D69]/95 to-[#006D77]/95 backdrop-blur-[10px] shadow-lg"
-          : "bg-gradient-to-r from-[#0B3D69]/80 to-[#006D77]/80 backdrop-blur-sm"
+          ? "bg-gradient-to-r from-[#0B3D69]/95 to-[#0E6F9E]/95 backdrop-blur-[10px] shadow-lg"
+          : "bg-gradient-to-r from-[#0B3D69]/80 to-[#0E6F9E]/80 backdrop-blur-sm"
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}

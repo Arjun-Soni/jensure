@@ -28,7 +28,7 @@ export function Footer() {
   return (
     <footer
       id="contact"
-      className="relative overflow-hidden bg-gradient-to-br from-[#0B3D69] via-[#006D77] to-[#0B3D69] text-white"
+      className="relative overflow-hidden bg-gradient-to-br from-[#0B3D69] via-[#0E6F9E] to-[#0B3D69] text-white"
     >
       {/* Subtle Shimmer Animation */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-shimmer opacity-30" />
