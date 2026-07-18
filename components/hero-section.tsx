@@ -11,7 +11,7 @@ export function HeroSection() {
       className="relative min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] lg:min-h-screen flex items-center overflow-hidden pt-20 sm:pt-24"
     >
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0B3D69] via-[#006D77] to-[#0B3D69]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0B3D69] via-[#0E6F9E] to-[#0B3D69]" />
 
       <div className="absolute inset-0 overflow-hidden opacity-[0.08]">
         {[...Array(4)].map((_, i) => (
@@ -47,7 +47,7 @@ export function HeroSection() {
           quality={85}
         />
         {/* Dark overlay for better text readability on mobile */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0B3D69]/80 via-[#006D77]/70 to-[#0B3D69]/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0B3D69]/80 via-[#0E6F9E]/70 to-[#0B3D69]/90" />
       </div>
 
       <motion.div
@@ -69,7 +69,7 @@ export function HeroSection() {
             sizes="60vw"
             quality={85}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#006D77]/50 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0E6F9E]/50 via-transparent to-transparent" />
         </div>
       </motion.div>
 
@@ -93,7 +93,7 @@ export function HeroSection() {
             sizes="(max-width: 1024px) 60vw, 50vw"
             quality={85}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#006D77]/40 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0E6F9E]/40 via-transparent to-transparent" />
         </div>
       </motion.div>
 
